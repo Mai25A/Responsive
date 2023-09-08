@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTC-Academy-Fashion-Week</title>
+    <style>
+        *{
+            font-size: 62.5%;
+           
+        }
+            .container1{
+                background-color: green;
+                height: 150px;
+                width: 100%;
+                position: sticky;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                
+                
+            }
+            .container1 h1,h4{
+                color: white;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: lighter;
+            }
+            h1{
+                font-size:3rem;
+            }
+            h4{
+                font-size: 2.3rem;
+            }
+            h2{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+            
+
+            img{
+                width: 95%;
+            }
+            /* Thêm CSS cho các cột */
+            .container2__item {
+                float: left; /* Cho phép các phần tử nằm ngang nhau */
+                width: 33.33%; /* Chia độ rộng cho ba cột */
+            }
+            
+            /*tablet w>=740 and <1024*/
+        @media screen and (min-width: 768px) and (max-width:1023px){
+
+            .container2__item {
+                float: left; /* Cho phép các phần tử nằm ngang nhau */
+                width: 50%; /* Chia độ rộng cho hai cột */
+            }
+         
+
+        }
+            /*mobile screen */
+        @media screen and (max-width:739px){
+            .container2__item {
+                width: 100%; /* Chia độ rộng cho cột */
+            }
+           
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <h1>VTC Academy Fashion Week</h1>
+            <h4>Resize this responsive pagel</h4>
+        </div>
+    </header>
+    <body>
+        <div class="container2">
+            <div class="container2__item item1">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <img src="./img/pic1.jpeg" alt="">
+            </div>
+            <div class="container2__item item2">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <img src="./img/pic1.jpeg" alt="">
+            </div>
+            <div class="container2__item item3">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <img src="./img/pic1.jpeg" alt="">
+            </div>
+        </div>
+    </body>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
